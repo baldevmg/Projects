@@ -1,0 +1,25 @@
+Spring AI Documents & Ollama Embedded Plugins
+
+-> Spring AI Framework with Ollama image from docker to install in locals
+-> docker file execution
+-> docker compose -f .\docker-compose.yml up
+-> execution of particular model inside the ollama image depending on size in GB compactablity we can use models like Llama2, mistral, solar etcs -> docker exec -it ollama ollama run orca-mini (capable of taking prompt& perfect for small application)
+
+
+Usage:
+   ->    Open DOcker desktop in your local machine
+   ->    Turn-up status of Docker image Ollama
+   ->    Status check -> cmd
+   ->    docker ps
+   ->    CONTAINER ID   IMAGE           COMMAND               CREATED       STATUS          PORTS                      NAMES
+   ->    (nothing is showing then it is off state)
+
+   ->    cmd to run docker compose to turn-up docker image
+   ->    docker compose -f .\docker-compose.yml up
+
+   ->    After running status will change to
+   ->    CONTAINER ID   IMAGE           COMMAND               CREATED       STATUS          PORTS                      NAMES
+         ba5670fd8f7f   ollama/ollama   "/bin/ollama serve"   3 hours ago   Up 21 seconds   0.0.0.0:11434->11434/tcp   ollama
+
+   ->    Run the spring application and then connection establishes and then we need to run on frontend
+
